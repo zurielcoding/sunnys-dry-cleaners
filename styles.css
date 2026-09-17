@@ -1,53 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap');
 
 
+/* =========================
+   RESET
+========================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
+    width: 100%;
+    overflow-x: hidden;
+
     font-family: 'Poppins', sans-serif;
     color: #172A3A;
     background-color: #FFF8E7;
 }
 
 
-/* ---------- HEADER ---------- */
+/* =========================
+   HEADER
+========================= */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    width: 100%;
     padding: 18px 60px;
 
     background-color: #172A3A;
-
     border-bottom: 5px solid #F9C51A;
 }
 
 header h1 {
     font-family: 'Bebas Neue', sans-serif;
-
     font-size: 32px;
     letter-spacing: 2px;
-
     color: #F9C51A;
+    white-space: nowrap;
 }
 
 nav {
     display: flex;
+    align-items: center;
     gap: 30px;
 }
 
 nav a {
-    text-decoration: none;
-
     color: #FFFFFF;
-
+    text-decoration: none;
+    font-size: 15px;
     font-weight: 600;
+
+    white-space: nowrap;
 
     transition: color 0.2s ease;
 }
@@ -57,7 +72,9 @@ nav a:hover {
 }
 
 
-/* ---------- HERO ---------- */
+/* =========================
+   HERO
+========================= */
 
 .hero {
     min-height: 600px;
@@ -83,9 +100,15 @@ nav a:hover {
     color: #FFFFFF;
 }
 
-.hero h2 {
-    font-size: 72px;
+.hero > div {
+    width: 100%;
+    max-width: 900px;
+}
 
+.hero h2 {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 72px;
     line-height: 0.95;
 
     margin-bottom: 25px;
@@ -97,9 +120,11 @@ nav a:hover {
 }
 
 .hero p {
-    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 35px;
 
-    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 1.5;
 
     color: #FFFFFF;
 }
@@ -119,18 +144,20 @@ nav a:hover {
 
     cursor: pointer;
 
-    transition: transform 0.2s ease,
-                background-color 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
 }
 
 .hero button:hover {
     background-color: #F28C18;
-
     transform: translateY(-3px);
 }
 
 
-/* ---------- SERVICES ---------- */
+/* =========================
+   SERVICES
+========================= */
 
 .services {
     padding: 90px 60px;
@@ -141,7 +168,10 @@ nav a:hover {
 }
 
 .services h2 {
+    font-family: 'Bebas Neue', sans-serif;
+
     font-size: 52px;
+    letter-spacing: 1px;
 
     margin-bottom: 45px;
 
@@ -152,12 +182,15 @@ nav a:hover {
 
 .service-container {
     display: flex;
-
     justify-content: center;
+    align-items: stretch;
 
     gap: 30px;
 
     flex-wrap: wrap;
+
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .service-card {
@@ -168,23 +201,23 @@ nav a:hover {
     background-color: #FFFFFF;
 
     border: 4px solid #172A3A;
-
     border-radius: 18px;
 
     box-shadow: 7px 7px 0 #2F6DB2;
 
-    transition: transform 0.2s ease,
-                box-shadow 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .service-card:hover {
     transform: translate(-3px, -3px);
-
     box-shadow: 10px 10px 0 #F9C51A;
 }
 
 .service-card h3 {
     font-size: 32px;
+    line-height: 1.1;
 
     margin-bottom: 15px;
 
@@ -193,17 +226,18 @@ nav a:hover {
 
 .service-card p {
     line-height: 1.6;
-
     color: #455866;
 }
 
 
-/* ---------- FOOTER ---------- */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     text-align: center;
 
-    padding: 40px;
+    padding: 40px 20px;
 
     background-color: #172A3A;
 
@@ -216,144 +250,263 @@ footer p {
     color: #FFFFFF;
 }
 
-/* ---------- MOBILE ---------- */
+
+/* =========================
+   TABLETS
+========================= */
 
 @media (max-width: 768px) {
 
+    /* HEADER */
+
     header {
         flex-direction: column;
-        gap: 15px;
+
+        gap: 12px;
+
         padding: 18px 20px;
-        text-align: center;
     }
 
     header h1 {
-        font-size: 28px;
+        font-size: 30px;
     }
 
     nav {
-        gap: 16px;
-        flex-wrap: wrap;
+        width: 100%;
+
         justify-content: center;
+
+        gap: 20px;
+
+        flex-wrap: wrap;
     }
 
     nav a {
         font-size: 14px;
     }
 
+
+    /* HERO */
+
     .hero {
-        min-height: 520px;
-        padding: 60px 20px;
+        min-height: 500px;
+
+        padding: 70px 20px;
     }
 
     .hero h2 {
-        font-size: 48px;
-        line-height: 1;
+        font-size: 54px;
+        line-height: 0.95;
+
         margin-bottom: 20px;
     }
 
     .hero p {
+        max-width: 550px;
+
         font-size: 17px;
         line-height: 1.5;
+
         margin-bottom: 28px;
     }
 
-    .hero button {
-        padding: 14px 28px;
-        font-size: 15px;
-    }
+
+    /* SERVICES */
 
     .services {
-        padding: 60px 20px;
+        padding: 65px 20px;
     }
 
     .services h2 {
-        font-size: 40px;
+        font-size: 44px;
         margin-bottom: 35px;
     }
 
     .service-container {
-        flex-direction: column;
-        align-items: center;
         gap: 25px;
     }
 
     .service-card {
-        width: 100%;
-        max-width: 350px;
+        width: calc(50% - 15px);
+        max-width: none;
+
         padding: 30px 25px;
     }
 
     .service-card h3 {
         font-size: 28px;
     }
+}
+
+
+/* =========================
+   PHONES
+========================= */
+
+@media (max-width: 600px) {
+
+    /* HEADER */
+
+    header {
+        padding: 16px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+        text-align: center;
+    }
+
+    nav {
+        gap: 8px 18px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 460px;
+
+        padding: 60px 18px;
+
+        background-position: center;
+    }
+
+    .hero > div {
+        max-width: 100%;
+    }
+
+    .hero h2 {
+        font-size: clamp(42px, 12vw, 52px);
+
+        line-height: 0.95;
+
+        margin-bottom: 18px;
+
+        text-shadow:
+            3px 3px 0 #172A3A;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.5;
+
+        margin-bottom: 25px;
+    }
+
+    .hero button {
+        width: 100%;
+        max-width: 280px;
+
+        padding: 14px 20px;
+
+        font-size: 15px;
+    }
+
+
+    /* SERVICES */
+
+    .services {
+        padding: 55px 16px;
+    }
+
+    .services h2 {
+        font-size: 38px;
+        line-height: 1;
+
+        margin-bottom: 30px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 22px;
+
+        width: 100%;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: none;
+
+        padding: 28px 22px;
+
+        border-width: 3px;
+
+        border-radius: 15px;
+
+        box-shadow: 5px 5px 0 #2F6DB2;
+    }
+
+    .service-card h3 {
+        font-size: 27px;
+        margin-bottom: 12px;
+    }
+
+    .service-card p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+    /* FOOTER */
 
     footer {
-        padding: 30px 20px;
+        padding: 30px 15px;
+
+        font-size: 14px;
     }
 }
 
-/* ---------- SMALL PHONES ---------- */
 
-@media (max-width: 480px) {
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 380px) {
 
     header h1 {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     nav {
-        gap: 12px;
+        gap: 7px 14px;
     }
 
     nav a {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .hero {
-        min-height: 480px;
+        min-height: 430px;
+        padding: 50px 15px;
     }
 
     .hero h2 {
-        font-size: 40px;
+        font-size: 39px;
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .services {
+        padding: 45px 14px;
     }
 
     .services h2 {
         font-size: 34px;
     }
-}
-/* ---------- SMALL PHONES ---------- */
 
-@media (max-width: 480px) {
+    .service-card {
+        padding: 25px 20px;
+    }
 
-    header h1 {
+    .service-card h3 {
         font-size: 25px;
-    }
-
-    nav {
-        gap: 12px;
-    }
-
-    nav a {
-        font-size: 13px;
-    }
-
-    .hero {
-        min-height: 480px;
-    }
-
-    .hero h2 {
-        font-size: 40px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .services h2 {
-        font-size: 34px;
     }
 }
