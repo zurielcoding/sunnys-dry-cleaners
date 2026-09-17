@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #172A3A;
+    background-color: #FFF8E7;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 60px;
+
+    background-color: #172A3A;
+
+    border-bottom: 5px solid #F9C51A;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 32px;
+    letter-spacing: 2px;
+
+    color: #F9C51A;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #FFFFFF;
+
+    font-weight: 600;
+
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #F9C51A;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(23, 42, 58, 0.55),
+            rgba(23, 42, 58, 0.55)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #FFFFFF;
+}
+
+.hero h2 {
+    font-size: 72px;
+
+    line-height: 0.95;
+
+    margin-bottom: 25px;
+
+    color: #FFFFFF;
+
+    text-shadow:
+        4px 4px 0 #172A3A;
+}
+
+.hero p {
+    font-size: 20px;
+
+    margin-bottom: 35px;
+
+    color: #FFFFFF;
+}
+
+.hero button {
+    padding: 16px 34px;
+
+    border: 3px solid #172A3A;
+    border-radius: 30px;
+
+    background-color: #F9C51A;
+    color: #172A3A;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease,
+                background-color 0.2s ease;
+}
+
+.hero button:hover {
+    background-color: #F28C18;
+
+    transform: translateY(-3px);
+}
+
+
+/* ---------- SERVICES ---------- */
+
+.services {
+    padding: 90px 60px;
+
+    text-align: center;
+
+    background-color: #FFF8E7;
+}
+
+.services h2 {
+    font-size: 52px;
+
+    margin-bottom: 45px;
+
+    color: #172A3A;
+
+    text-shadow: 2px 2px 0 #F9C51A;
+}
+
+.service-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 280px;
+
+    padding: 40px 30px;
+
+    background-color: #FFFFFF;
+
+    border: 4px solid #172A3A;
+
+    border-radius: 18px;
+
+    box-shadow: 7px 7px 0 #2F6DB2;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translate(-3px, -3px);
+
+    box-shadow: 10px 10px 0 #F9C51A;
+}
+
+.service-card h3 {
+    font-size: 32px;
+
+    margin-bottom: 15px;
+
+    color: #172A3A;
+}
+
+.service-card p {
+    line-height: 1.6;
+
+    color: #455866;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    text-align: center;
+
+    padding: 40px;
+
+    background-color: #172A3A;
+
+    border-top: 6px solid #F9C51A;
+
+    color: #FFFFFF;
+}
+
+footer p {
+    color: #FFFFFF;
+}
