@@ -440,6 +440,8 @@ footer {
 }
 /* ---------- MOBILE ---------- */
 
+/* ---------- MOBILE ---------- */
+
 @media (max-width: 600px) {
 
     header {
@@ -494,8 +496,4 @@ footer {
     .contact-text {
         font-size: 15px;
     }
-}
-
-footer p {
-    color: #FFFFFF;
 }
