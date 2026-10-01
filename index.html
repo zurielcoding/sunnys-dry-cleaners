@@ -3,194 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Family-owned dry cleaning, laundry and alterations at five locations across Charlotte, NC.">
 
-    <title>Sunny's Dry Cleaners</title>
+    <title>Sunny's Dry Cleaners | Charlotte, NC</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Sunny's Dry Cleaners</h1>
+    <!-- ---------- HEADER ---------- -->
+    <header class="site-header">
+        <a href="#top" class="logo-link">
+            <img src="logo.png" alt="Sunny's Dry Cleaners" class="logo">
+        </a>
 
-        <nav>
-            <a href="#">Home</a>
+        <nav class="main-nav" aria-label="Main">
             <a href="#services">Services</a>
+            <a href="#delivery">Pickup &amp; delivery</a>
             <a href="#locations">Locations</a>
-            <a href="#about">About Us</a>
-            <a href="#contact">Contact Us</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#locations" class="nav-cta">Find a location</a>
         </nav>
     </header>
+
+    <!-- Filled in by the script at the bottom; hidden when empty -->
+    <div id="announcement-banner"></div>
 
 
     <main>
 
-        <section class="hero">
+        <!-- ---------- HERO ---------- -->
+        <section class="hero" id="top">
+            <div class="container hero-grid">
 
-            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Family-owned care for every garment.</h1>
 
-                <h2>Family-Owned Care.</h2>
+                    <p>
+                        Professional dry cleaning, laundry and alterations
+                        at five neighborhood stores across Charlotte.
+                    </p>
 
-                <p>
-                    Professional dry cleaning and garment care
-                    throughout Charlotte.
+                    <div class="button-row">
+                        <a href="#locations" class="btn btn-primary">Find a location</a>
+                        <a href="#services" class="btn btn-outline">Our services</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="logo.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ---------- PICKUP & DELIVERY (COMING SOON) ---------- -->
+        <section class="delivery" id="delivery">
+            <div class="container delivery-inner">
+
+                <p class="coming-soon">Coming soon</p>
+                <h2>Pickup &amp; delivery</h2>
+
+                <p class="delivery-text">
+                    We're making convenience even easier. Soon, we'll come to you.
                 </p>
 
-                <a href="#locations" class="hero-btn">Find a Location</a>
+                <ol class="delivery-steps">
+                    <li class="step">
+                        <span class="step-number">1</span>
+                        <h3>Schedule online</h3>
+                    </li>
+                    <li class="step">
+                        <span class="step-number">2</span>
+                        <h3>We pick up your items</h3>
+                    </li>
+                    <li class="step">
+                        <span class="step-number">3</span>
+                        <h3>We deliver clean</h3>
+                    </li>
+                </ol>
+
+                <p class="delivery-tagline">Fresh. Clean. Delivered. The Sunny's way.</p>
 
             </div>
-
         </section>
 
 
+        <!-- ---------- SERVICES ---------- -->
         <section class="services" id="services">
-            <h2>Our Services</h2>
+            <div class="container">
 
-            <div class="service-container">
+                <h2 class="section-title">Our services</h2>
 
-                <div class="service-card">
-                    <h3>Dry Cleaning</h3>
-                    <p>Professional cleaning for your everyday garments.</p>
+                <div class="card-grid">
+
+                    <div class="service-card">
+                        <span class="icon-circle">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 7a2 2 0 1 0-2-2"></path>
+                                <path d="M12 7v1.5L3 16a1 1 0 0 0 .6 1.8h16.8a1 1 0 0 0 .6-1.8L12 8.5"></path>
+                            </svg>
+                        </span>
+                        <h3>Dry cleaning</h3>
+                        <p>Professional cleaning for your everyday garments.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <span class="icon-circle">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 3c-3.5 4.5-6 7.8-6 11a6 6 0 0 0 12 0c0-3.2-2.5-6.5-6-11z"></path>
+                            </svg>
+                        </span>
+                        <h3>Laundry</h3>
+                        <p>Fresh, clean, and ready-to-wear clothes.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <span class="icon-circle">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="6" cy="6" r="3"></circle>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <path d="M20 4 8.1 15.9"></path>
+                                <path d="M14.5 14.5 20 20"></path>
+                                <path d="M8.1 8.1 12 12"></path>
+                            </svg>
+                        </span>
+                        <h3>Alterations</h3>
+                        <p>Professional alterations and garment repairs.</p>
+                    </div>
+
                 </div>
-
-                <div class="service-card">
-                    <h3>Laundry</h3>
-                    <p>Fresh, clean, and ready-to-wear clothes.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Alterations</h3>
-                    <p>Professional alterations and garment repairs.</p>
-                </div>
-
             </div>
         </section>
 
 
+        <!-- ---------- LOCATIONS (list layout from Option C) ---------- -->
         <section class="locations" id="locations">
-            <h2>Find a Location</h2>
+            <div class="container">
 
-            <div class="location-container">
+                <h2 class="section-title">Find a location</h2>
+                <p class="section-subtitle">Five neighborhood stores across Charlotte.</p>
 
-                <div class="location-card">
-                    <h3>Sunny's Dry Cleaners and Alterations – Providence Park</h3>
-                    <p class="loc-address">
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=2935+Providence+Rd+Charlotte+NC+28211" target="_blank">
-                            2935 Providence Rd, Charlotte, NC 28211
-                        </a>
-                    </p>
-                    <p class="loc-phone"><a href="tel:7043666651">(704) 366-6651</a></p>
-                    <p class="loc-hours">Mon-Fri 7:30am-6pm, Sat 9am-4pm, Sun Closed</p>
+                <div class="location-list">
+
+                    <div class="location-row">
+                        <div class="location-name">
+                            <h3>Providence Park</h3>
+                            <span>Sunny's Dry Cleaners and Alterations</span>
+                        </div>
+                        <a class="location-address" href="https://www.google.com/maps/dir/?api=1&amp;destination=2935+Providence+Rd+Charlotte+NC+28211" target="_blank" rel="noopener">2935 Providence Rd, Charlotte, NC 28211</a>
+                        <a class="location-phone" href="tel:7043666651">(704) 366-6651</a>
+                        <p class="location-hours">Mon–Fri 7:30am–6pm<br>Sat 9am–4pm · Sun closed</p>
+                    </div>
+
+                    <div class="location-row">
+                        <div class="location-name">
+                            <h3>N Tryon</h3>
+                            <span>Sunny's Dry Cleaners and Alterations</span>
+                        </div>
+                        <a class="location-address" href="https://www.google.com/maps/dir/?api=1&amp;destination=9211+N+Tryon+St+%233+Charlotte+NC+28262" target="_blank" rel="noopener">9211 N Tryon St #3, Charlotte, NC 28262</a>
+                        <a class="location-phone" href="tel:7045481254">(704) 548-1254</a>
+                        <p class="location-hours">Mon–Fri 8am–6pm<br>Sat 9am–4pm · Sun closed</p>
+                    </div>
+
+                    <div class="location-row">
+                        <div class="location-name">
+                            <h3>Highland Shoppes</h3>
+                            <span>Sunny's Dry Cleaners and Alterations</span>
+                        </div>
+                        <a class="location-address" href="https://www.google.com/maps/dir/?api=1&amp;destination=5818+Highland+Shoppes+Dr+Charlotte+NC+28269" target="_blank" rel="noopener">5818 Highland Shoppes Dr, Charlotte, NC 28269</a>
+                        <a class="location-phone" href="tel:7049477335">(704) 947-7335</a>
+                        <p class="location-hours">Mon–Fri 8am–6pm<br>Sat 9am–4pm · Sun closed</p>
+                    </div>
+
+                    <div class="location-row">
+                        <div class="location-name">
+                            <h3>Eastway</h3>
+                            <span>Clean Clothes Dry Cleaners and Alterations</span>
+                        </div>
+                        <a class="location-address" href="https://www.google.com/maps/dir/?api=1&amp;destination=2911+Eastway+Dr+Charlotte+NC+28205" target="_blank" rel="noopener">2911 Eastway Dr, Charlotte, NC 28205</a>
+                        <a class="location-phone" href="tel:7045676224">(704) 567-6224</a>
+                        <p class="location-hours">Mon–Fri 7am–8pm<br>Sat 8am–8pm</p>
+                    </div>
+
+                    <div class="location-row">
+                        <div class="location-name">
+                            <h3>Plaza</h3>
+                            <span>Clean Clothes Dry Cleaners and Alterations</span>
+                        </div>
+                        <a class="location-address" href="https://www.google.com/maps/dir/?api=1&amp;destination=7320+Plaza+Rd+Extension+Charlotte+NC+28215" target="_blank" rel="noopener">7320 Plaza Rd Extension, Charlotte, NC 28215</a>
+                        <a class="location-phone" href="tel:7045687616">(704) 568-7616</a>
+                        <p class="location-hours">Mon–Fri 7:30am–6:30pm<br>Sat 9am–3pm · Sun closed</p>
+                    </div>
+
                 </div>
-
-                <div class="location-card">
-                    <h3>Sunny's Dry Cleaners and Alterations – N Tryon</h3>
-                    <p class="loc-address">
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=9211+N+Tryon+St+%233+Charlotte+NC+28262" target="_blank">
-                            9211 N Tryon St #3, Charlotte, NC 28262
-                        </a>
-                    </p>
-                    <p class="loc-phone"><a href="tel:7045481254">(704) 548-1254</a></p>
-                    <p class="loc-hours">Mon-Fri 8am-6pm, Sat 9am-4pm, Sun Closed</p>
-                </div>
-
-                <div class="location-card">
-                    <h3>Sunny's Dry Cleaners and Alterations – Highland Shoppes</h3>
-                    <p class="loc-address">
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=5818+Highland+Shoppes+Dr+Charlotte+NC+28269" target="_blank">
-                            5818 Highland Shoppes Dr, Charlotte, NC 28269
-                        </a>
-                    </p>
-                    <p class="loc-phone"><a href="tel:7049477335">(704) 947-7335</a></p>
-                    <p class="loc-hours">Mon-Fri 8am-6pm, Sat 9am-4pm, Sun Closed</p>
-                </div>
-
-                <div class="location-card">
-                    <h3>Clean Clothes Dry Cleaners and Alterations – Eastway</h3>
-                    <p class="loc-address">
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=2911+Eastway+Dr+Charlotte+NC+28205" target="_blank">
-                            2911 Eastway Dr, Charlotte, NC 28205
-                        </a>
-                    </p>
-                    <p class="loc-phone"><a href="tel:7045676224">(704) 567-6224</a></p>
-                    <p class="loc-hours">Mon-Fri 7am-8pm, Sat 8am-8pm</p>
-                </div>
-
-                <div class="location-card">
-                    <h3>Clean Clothes Dry Cleaners and Alterations – Plaza</h3>
-                    <p class="loc-address">
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=7320+Plaza+Rd+Extension+Charlotte+NC+28215" target="_blank">
-                            7320 Plaza Rd Extension, Charlotte, NC 28215
-                        </a>
-                    </p>
-                    <p class="loc-phone"><a href="tel:7045687616">(704) 568-7616</a></p>
-                    <p class="loc-hours">Mon-Fri 7:30am-6:30pm, Sat 9am-3pm, Sun Closed</p>
-                </div>
-
             </div>
         </section>
-        
+
+
+        <!-- ---------- WHAT SETS US APART ---------- -->
         <section class="why-us">
-            <h2>What Sets Us Apart</h2>
+            <div class="container">
 
-            <div class="why-container">
+                <h2 class="section-title">What sets us apart</h2>
 
-                <div class="why-card">
-                    <h3>Family Owned</h3>
-                    <p>A local, family-run business proudly serving the Charlotte community.</p>
+                <div class="why-grid">
+
+                    <div class="why-item">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+                        </svg>
+                        <h3>Family owned</h3>
+                        <p>A local, family-run business proudly serving the Charlotte community.</p>
+                    </div>
+
+                    <div class="why-item">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+                        </svg>
+                        <h3>Five convenient locations</h3>
+                        <p>Providence Park, N Tryon, Highland Shoppes, Eastway and Plaza.</p>
+                    </div>
+
+                    <div class="why-item">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+                        </svg>
+                        <h3>Pickup &amp; delivery</h3>
+                        <p>Coming soon: we'll pick up and deliver right to your door.</p>
+                    </div>
+
+                    <div class="why-item">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+                        </svg>
+                        <h3>Expert care</h3>
+                        <p>From everyday shirts to wedding gowns, every garment gets careful, experienced attention.</p>
+                    </div>
+
                 </div>
-
-                <div class="why-card">
-                    <h3>Five Convenient Locations</h3>
-                    <p>Providence Park, N Tryon, Highland Shoppes, Eastway, and Plaza — a Sunny's near you.</p>
-                </div>
-
-                <div class="why-card">
-                    <h3>Pickup &amp; Delivery</h3>
-                    <p>Schedule a pickup and we'll bring your clothes back cleaned and pressed.</p>
-                </div>
-
-                <div class="why-card">
-                    <h3>Expert Care</h3>
-                    <p>From everyday shirts to wedding gowns, every garment gets careful, experienced attention.</p>
-                </div>
-
             </div>
         </section>
 
+
+        <!-- ---------- ABOUT ---------- -->
         <section class="about" id="about">
-            <h2>About Us</h2>
+            <div class="container narrow">
 
-            <p class="about-text">
-                Sunny's Dry Cleaners is a family-owned business dedicated to
-                good customer service and quality results. From everyday
-                garments to life's most important occasions, we treat every
-                piece of clothing with the same care we'd want for our own —
-                because that's what a family business is built on.
-            </p>
+                <h2 class="section-title">About us</h2>
+
+                <p class="about-text">
+                    Sunny's Dry Cleaners is a family-owned business dedicated to
+                    good customer service and quality results. From everyday
+                    garments to life's most important occasions, we treat every
+                    piece of clothing with the same care we'd want for our own.
+                </p>
+
+                <p class="tagline">The Sunny Standard.</p>
+
+            </div>
         </section>
 
+
+        <!-- ---------- CONTACT ---------- -->
         <section class="contact" id="contact">
-            <h2>Contact Us</h2>
+            <div class="container narrow">
 
-            <p class="contact-text">
-                Have a question or need help with an order? Reach out to
-                your nearest Sunny's location directly, or give us a call.
-            </p>
+                <h2 class="section-title">Contact us</h2>
 
-            <div class="contact-info">
-                <p><a href="tel:7043666651">(704) 366-6651</a></p>
-                <p><a href="mailto:info@sunnysdrycleaning.com">info@sunnysdrycleaning.com</a></p>
+                <p class="contact-text">
+                    Have a question about an order? Call your nearest store, or reach us here.
+                </p>
+
+                <a href="tel:7043666651" class="contact-phone">(704) 366-6651</a>
+
+                <!-- TODO: replace with the real business email once confirmed -->
+                <p class="contact-email">[email address]</p>
+
             </div>
-        </section> 
+        </section>
 
     </main>
 
 
-    <footer>
-        <p>© 2026 Sunny's Dry Cleaners</p>
+    <!-- ---------- FOOTER ---------- -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <img src="logo.png" alt="Sunny's Dry Cleaners" class="footer-logo">
+
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="#services">Services</a>
+                <a href="#locations">Locations</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <p class="copyright">© 2026 Sunny's Dry Cleaners</p>
+        </div>
     </footer>
+
+
+    <script>
+        // Where the backend lives. When it goes live, change this one line.
+        const API_URL = "http://127.0.0.1:5000";
+
+        fetch(API_URL + "/api/announcements")
+            .then(response => response.json())
+            .then(announcements => {
+                if (announcements.length > 0) {
+                    document.getElementById("announcement-banner").textContent = announcements[0].message;
+                }
+            })
+            .catch(() => {});
+    </script>
 
 </body>
 </html>
