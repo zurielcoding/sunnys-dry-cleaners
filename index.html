@@ -20,11 +20,10 @@
 
         <nav class="main-nav" aria-label="Main">
             <a href="#services">Services</a>
-            <a href="#delivery">Pickup &amp; delivery</a>
             <a href="#locations">Locations</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
-            <a href="#locations" class="nav-cta">Find a location</a>
+            <a href="#delivery" class="nav-cta">Schedule a pickup</a>
         </nav>
     </header>
 
@@ -60,15 +59,15 @@
         </section>
 
 
-        <!-- ---------- PICKUP & DELIVERY (COMING SOON) ---------- -->
+        <!-- ---------- PICKUP & DELIVERY ---------- -->
         <section class="delivery" id="delivery">
             <div class="container delivery-inner">
 
-                <p class="coming-soon">Coming soon</p>
+                <p class="coming-soon">Now available</p>
                 <h2>Pickup &amp; delivery</h2>
 
                 <p class="delivery-text">
-                    We're making convenience even easier. Soon, we'll come to you.
+                    Skip the trip. Schedule a pickup online and we'll bring your clothes back clean.
                 </p>
 
                 <ol class="delivery-steps">
@@ -85,6 +84,14 @@
                         <h3>We deliver clean</h3>
                     </li>
                 </ol>
+
+                <a href="https://sunnyscleaners.smrtapp.com/custx/" class="btn btn-primary delivery-btn" target="_blank" rel="noopener">
+                    Schedule a pickup
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M5 12h14"></path>
+                        <path d="m13 6 6 6-6 6"></path>
+                    </svg>
+                </a>
 
                 <p class="delivery-tagline">Fresh. Clean. Delivered. The Sunny's way.</p>
 
@@ -236,7 +243,7 @@
                             <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
                         </svg>
                         <h3>Pickup &amp; delivery</h3>
-                        <p>Coming soon: we'll pick up and deliver right to your door.</p>
+                        <p>Schedule online and we'll pick up and deliver right to your door.</p>
                     </div>
 
                     <div class="why-item">
@@ -300,6 +307,7 @@
 
             <nav class="footer-nav" aria-label="Footer">
                 <a href="#services">Services</a>
+                <a href="#delivery">Pickup &amp; delivery</a>
                 <a href="#locations">Locations</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
@@ -312,7 +320,7 @@
 
     <script>
         // Where the backend lives. When it goes live, change this one line.
-        const API_URL = "https://sunnys-backend.onrender.com";;
+        const API_URL = "https://sunnys-backend.onrender.com";
 
         fetch(API_URL + "/api/announcements")
             .then(response => response.json())
